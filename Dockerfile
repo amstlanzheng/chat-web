@@ -13,6 +13,9 @@ RUN npm install
 # 复制项目文件
 COPY . .
 
+# 设置 Node.js 的内存限制为 2GB，防止内存不足
+ENV NODE_OPTIONS="--max_old_space_size=512"
+
 # 构建项目
 RUN npm run build
 
