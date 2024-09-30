@@ -2,14 +2,13 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-	"script": {
-		"build": "nuxt build",
-    "dev": "nuxt dev --host",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "start": "node .output/server/index.mjs"
-	},
+    "postinstall": "nuxt prepare"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "@element-plus/nuxt": "latest",

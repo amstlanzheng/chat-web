@@ -72,3 +72,9 @@ yarn preview
 # bun
 bun run preview
 ```
+
+#### docker部署
+1. 拉取代码，进入项目根目录
+2. 将`.env`文件放入项目根目录
+3. 构建 Docker 镜像 `docker-compose build`
+4. 启动服务 `docker-compose up`
